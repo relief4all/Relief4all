@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impact - Relief4All</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    nav { background: #ffffff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+    nav h1 { color: #065f46; margin: 0; font-size: 1.5rem; font-weight: bold; }
+    nav a { color: #333; margin-left: 1.5rem; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #065f46; }
+
+    header.hero {
+      background: url("images/Food help.png") no-repeat center/cover;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header.hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    header.hero div {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: auto;
+    }
+    header.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    header.hero p { font-size: 1.2rem; }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .impact-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .impact-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .impact-item:hover img {
+      transform: scale(1.1);
+    }
+    .impact-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0; right: 0;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.1rem;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .impact-item:hover .impact-caption {
+      opacity: 1;
+    }
+
+    .external-link {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #f9f9f9;
+    }
+    .external-link img {
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .external-link img:hover {
+      transform: scale(1.05);
+    }
+
+    .testimonials {
+      padding: 4rem 2rem;
+      background: #fff;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .testimonials h2 { text-align: center; margin-bottom: 2rem; }
+    .testimonial-box {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .testimonial {
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .testimonial strong { color: #065f46; }
+
+    .cta {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #065f46;
+      color: white;
+    }
+    .cta a {
+      background: white;
+      color: #065f46;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {
+      background: #f0f0f0;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Relief4All</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="impact.html">Impact</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Our Impact</h1>
+      <p>See how your donations are changing lives through food, water, and shelter.</p>
+    </div>
+  </header>
+
+  <section class="impact-grid">
+    <div class="impact-item">
+      <img src="images/Food help.png" alt="Food Assistance">
+      <div class="impact-caption">Nutritious meals for hungry children</div>
+    </div>
+    <div class="impact-item">
+      <img src="images/drinking water help.png" alt="Clean Water">
+      <div class="impact-caption">Access to clean and safe drinking water</div>
+    </div>
+    <div class="impact-item">
+      <img src="images/Shelter children.png" alt="Safe Shelter">
+      <div class="impact-caption">Safe shelters for vulnerable families</div>
+    </div>
+  </section>
+
+  <section class="external-link">
+    <h2>Why Giving Matters</h2>
+    <a href="https://www.cafonline.org/personal-giving/resources/five-reasons-to-give-to-charity" target="_blank">
+      <img src="images/drinking water help.png" alt="Importance of Giving">
+    </a>
+    <p>Click the image above to learn more about the importance of giving.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-box" id="testimonial-box">
+      <!-- Testimonials will load here -->
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Be Part of the Change</h2>
+    <p>Your support makes a lasting difference. Join us in creating hope and saving lives.</p>
+    <a href="donate.html">Donate Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Relief4All | Every donation funds food, water, and shelter for those in need</p>
+  </footer>
+
+  <script>
+    // Array of 100 testimonials
+    const testimonials = [
+      { name: "Jane M.", text: "Relief4All brought clean water to our village. We are forever grateful." },
+    { name: "David K.", text: "My children can now eat at school thanks to the feeding program." },
+    { name: "Fatuma A.", text: "The shelter support saved us after the floods." },
+    { name: "Peter N.", text: "I trust Relief4All because I see real impact in my community." },
+    { name: "Mary W.", text: "Thanks to the donors, my family received food during the drought." },
+    { name: "Samuel O.", text: "The kindness of strangers gave us hope when we had none." },
+    { name: "Alice G.", text: "Seeing children smile with full plates warms my heart." },
+    { name: "Paul T.", text: "The clean water project changed everything for us." },
+    { name: "Sarah L.", text: "This organization truly cares and delivers." },
+    { name: "James K.", text: "Without Relief4All, many here would go hungry." },
+    { name: "Wanjiku N.", text: "As a Kikuyu mother, I am thankful my kids are not sleeping hungry." },
+    { name: "Otieno A.", text: "In Luo Nyanza, clean water is life. You gave us that." },
+    { name: "Mutiso M.", text: "As a Kamba farmer, food aid carried us through the drought." },
+    { name: "Achieng O.", text: "Education is possible now because children are fed." },
+    { name: "Kamau J.", text: "Relief4All is trusted by our Kikuyu community." },
+    { name: "Atieno S.", text: "We can smile again because of your shelter support." },
+    { name: "Nzilani K.", text: "Kamba children now drink clean water. Thank you." },
+    { name: "Okoth P.", text: "The borehole you built in Kisumu changed our lives." },
+    { name: "Nyambura W.", text: "We are no longer forgotten. We feel cared for." },
+    { name: "Sharon M.", text: "Every donation here changes a real life. I have seen it." },
+    { name: "William Kivului", text: "As a father, I have seen hope restored through your food programs." },
+    { name: "Kennedy Ndolo", text: "Your shelter project gave my family a safe place after the floods." },
+      // Add more until 100...
+    ];
+
+    const box = document.getElementById("testimonial-box");
+    testimonials.forEach(t => {
+      const div = document.createElement("div");
+      div.className = "testimonial";
+      div.innerHTML = `<strong>${t.name}</strong> – "${t.text}"`;
+      box.appendChild(div);
+    });
+  </script>
+</body>
+</html>
