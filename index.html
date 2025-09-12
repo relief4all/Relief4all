@@ -35,7 +35,8 @@
     input, textarea { padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px; }
     footer { background: #111827; color: white; text-align: center; padding: 2rem; margin-top: 3rem; font-size: 0.9rem; }
     .partners { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; align-items: center; margin-top: 2rem; }
-    .partners img { max-height: 50px; }
+    .partners img { max-height: 50px; transition: transform 0.3s ease; }
+    .partners img:hover { transform: scale(1.1); }
   </style>
 </head>
 <body>
@@ -59,7 +60,6 @@
       
       <!-- Donation Box (Donorbox Embed) -->
       <div class="donate-box">
-        <!-- Replace the link below with your real Donorbox campaign link -->
         <iframe src="https://donorbox.org/embed/relief4all-campaign" 
                 height="900px" 
                 width="100%" 
@@ -83,13 +83,27 @@
   <section>
     <h2>Trusted by top reviewers, funders, and researchers</h2>
     <div class="partners">
-      <img src="images/charity-navigator.png" alt="Charity Navigator">
-      <img src="images/usaid.png" alt="USAID">
-      <img src="images/life-you-can-save.png" alt="The Life You Can Save">
-      <img src="images/google-org.png" alt="Google.org">
-      <img src="images/consumer-reports.png" alt="Consumer Reports">
-      <img src="images/global-innovation-fund.png" alt="Global Innovation Fund">
-      <img src="images/ikea-foundation.png" alt="IKEA Foundation">
+      <a href="https://www.charitynavigator.org/" target="_blank">
+        <img src="images/charity-navigator.png" alt="Charity Navigator">
+      </a>
+      <a href="https://www.usaid.gov/" target="_blank">
+        <img src="images/usaid.png" alt="USAID">
+      </a>
+      <a href="https://www.thelifeyoucansave.org/" target="_blank">
+        <img src="images/life-you-can-save.png" alt="The Life You Can Save">
+      </a>
+      <a href="https://www.google.org/" target="_blank">
+        <img src="images/google-org.png" alt="Google.org">
+      </a>
+      <a href="https://www.consumerreports.org/" target="_blank">
+        <img src="images/consumer-reports.png" alt="Consumer Reports">
+      </a>
+      <a href="https://www.globalinnovation.fund/" target="_blank">
+        <img src="images/global-innovation-fund.png" alt="Global Innovation Fund">
+      </a>
+      <a href="https://ikeafoundation.org/" target="_blank">
+        <img src="images/ikea-foundation.png" alt="IKEA Foundation">
+      </a>
     </div>
   </section>
 
