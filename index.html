@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relief4All - Flood & Hunger Relief</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    nav { background: #ffffff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+    nav h1 { color: #065f46; margin: 0; font-size: 1.5rem; font-weight: bold; }
+    nav a { color: #333; margin-left: 1.5rem; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #065f46; }
+    .hero { background: url('https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover; color: white; text-align: left; padding: 6rem 2rem; position: relative; }
+    .hero-overlay { background: rgba(0,0,0,0.5); padding: 4rem; max-width: 600px; border-radius: 10px; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+
+    /* Donation Box Styling */
+    .donate-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+      margin-top: 1.5rem;
+    }
+
+    section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+    section h2 { font-size: 2rem; margin-bottom: 1rem; text-align: center; }
+    section p { font-size: 1.1rem; text-align: center; margin-bottom: 2rem; }
+    .impact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; text-align: center; }
+    .impact-box { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: auto; }
+    input, textarea { padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px; }
+    footer { background: #111827; color: white; text-align: center; padding: 2rem; margin-top: 3rem; font-size: 0.9rem; }
+    .partners { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; align-items: center; margin-top: 2rem; }
+    .partners img { max-height: 50px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Relief4All</h1>
+    <div>
+      <a href="about.html">About</a>
+      <a href="impact.html">Impact</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Send help directly to families hit by floods & drought</h1>
+      <p>Your donation provides food, clean water, and emergency support where it’s needed most.</p>
+      
+      <!-- Donation Box (Donorbox Embed) -->
+      <div class="donate-box">
+        <!-- Replace the link below with your real Donorbox campaign link -->
+        <iframe src="https://donorbox.org/embed/relief4all-campaign" 
+                height="900px" 
+                width="100%" 
+                style="max-width:500px; min-width:250px;" 
+                seamless="seamless" 
+                name="donorbox" 
+                frameborder="0" 
+                scrolling="no">
+        </iframe>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Content -->
+  <section>
+    <h2>Welcome to Relief4All</h2>
+    <p>We are on a mission to fight hunger and provide flood & drought relief. Explore our site to learn more.</p>
+  </section>
+
+  <!-- Partners -->
+  <section>
+    <h2>Trusted by top reviewers, funders, and researchers</h2>
+    <div class="partners">
+      <img src="images/charity-navigator.png" alt="Charity Navigator">
+      <img src="images/usaid.png" alt="USAID">
+      <img src="images/life-you-can-save.png" alt="The Life You Can Save">
+      <img src="images/google-org.png" alt="Google.org">
+      <img src="images/consumer-reports.png" alt="Consumer Reports">
+      <img src="images/global-innovation-fund.png" alt="Global Innovation Fund">
+      <img src="images/ikea-foundation.png" alt="IKEA Foundation">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Relief4All | 100% of donations fund hunger & disaster relief</p>
+  </footer>
+
+</body>
+</html>
