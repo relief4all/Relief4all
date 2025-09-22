@@ -61,7 +61,7 @@
       color: #333;
       padding: 2rem;
       border-radius: 12px;
-      max-width: 420px;
+      max-width: 500px;
       flex: 1;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       min-width: 300px;
@@ -74,7 +74,7 @@
 
     iframe {
       width: 100%;
-      min-height: 600px;
+      min-height: 700px;
       border: none;
     }
 
@@ -131,8 +131,13 @@
     <!-- Donation form on the left -->
     <div class="donate-box">
       <h2>Make a Donation</h2>
-      <iframe src="https://donorbox.org/embed/thescorefoundation-campaign" 
-              allowpaymentrequest="true">
+
+      <!-- Donorbox Embed -->
+      <script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
+      <iframe src="https://donorbox.org/embed/the-score-foundation-fighting-hunger-disasters?"
+        name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless"
+        frameborder="0" scrolling="no" height="900px" width="100%"
+        style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment">
       </iframe>
     </div>
 
